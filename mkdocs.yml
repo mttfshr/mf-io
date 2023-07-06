@@ -1,6 +1,6 @@
-site_name: your_site_name # Change this to your site name
-site_description: A cool description of your site
-site_url: https://change_me.io/ # Change this to your site URL
+site_name: Matt Fisher # Change this to your site name
+site_description: Everything that is not a fragment is invisible
+site_url: https://mattfisher.io/ # Change this to your site URL
 
 theme:
     name: 'material'
@@ -8,8 +8,8 @@ theme:
     favicon: assets/meta/favicons.png
     custom_dir: overrides
     font:
-        text: Ubuntu
-        code: Ubuntu Mono
+        text: Inter
+        code: Chivo Mono
     language: en
     palette:
 
@@ -19,22 +19,21 @@ theme:
       primary: teal
       accent: light blue
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/lightbulb-outline
         name: Switch to dark mode
 
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue
+      primary: indigo
       accent: indigo
       toggle:
-        icon: material/toggle-switch
+        icon: material/lightbulb
         name: Switch to light mode
     features:
         - navigation.indexes
         - navigation.top
         - navigation.tabs
-        - navigation.tabs.sticky
         - navigation.expand
         - search.suggest
         - search.highlight
