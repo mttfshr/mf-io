@@ -46,45 +46,8 @@
             <span class="md-ellipsis">{% if page.meta and page.meta.title %} {{ page.meta.title }} {% else %} {{ page.title }} {% endif %}</span>
           </div>
         </div>
-      </div><!-- Color palette -->
-      {% if config.theme.palette %} {% if not config.theme.palette is mapping %}
-      <form class="md-header__option"
-            data-md-component="palette">
-        {% for option in config.theme.palette %} {% set scheme = option.scheme | d("default", true) %} {% set primary = option.primary | d("indigo", true) %} {% set accent = option.accent | d("indigo", true) %} <input aria-hidden="true"
-              aria-label="{{ option.toggle.name }}"
-              class="md-option"
-              data-md-color-accent="{{ accent | replace(' ', '-') }}"
-              data-md-color-media="{{ option.media }}"
-              data-md-color-primary="{{ primary | replace(' ', '-') }}"
-              data-md-color-scheme="{{ scheme | replace(' ', '-') }}"
-              else=""
-              endif=""
-              id="__palette_{{ loop.index }}"
-              if=""
-              name="__palette"
-              option.toggle=""
-              type="radio"> {% if option.toggle %} <label class="md-header__button md-icon"
-              for="__palette_{{ loop.index0 or loop.length }}"
-              hidden=""
-              title="{{ option.toggle.name }}">{% include ".icons/" ~ option.toggle.icon ~ ".svg" %}</label> {% endif %} {% endfor %}
-      </form>{% endif %} {% endif %} <!-- Site language selector -->
-       {% if config.extra.alternate %}
-      <div class="md-header__option">
-        <div class="md-select">
-          {% set icon = config.theme.icon.alternate or "material/translate" %} <button aria-label="{{ lang.t('select.language') }}"
-               class="md-header__button md-icon">{% include ".icons/" ~ icon ~ ".svg" %}</button>
-          <div class="md-select__inner">
-            <ul class="md-select__list">
-              {% for alt in config.extra.alternate %}
-              <li class="md-select__item">
-                <a class="md-select__link"
-                    href="{{alt.link|url}}"
-                    hreflang="{{ alt.lang }}">{{ alt.name }}</a>
-              </li>{% endfor %}
-            </ul>
-          </div>
-        </div>
-      </div>{% endif %} <!-- Button to open search modal -->
+      </div> 
+      <!-- Button to open search modal -->
        {% if "material/search" in config.plugins %} <label class="md-header__button md-icon"
            for="__search">{% include ".icons/material/magnify.svg" %}</label> <!-- Search interface -->
        {% include "partials/search.html" %} {% endif %} <!-- Repository information -->

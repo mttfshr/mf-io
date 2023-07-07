@@ -80,9 +80,9 @@ plugins:
   - search
   - meta-descriptions
   - git-revision-date-localized:
-      type: date
+      type: timeago
       fallback_to_build_date: true
-      locale: fr
+      locale: en
       custom_format: "%A %d %B %Y"
       enable_creation_date: true
   - ezlinks:
@@ -124,7 +124,8 @@ extra:
   SEO: assets/meta/SEO.png
   comments: false #disable comments globally
   generate_graph: true #generate the graph of the site
-  attachments: 'assets/img' #path to the folder where the attachments are stored
+  generator: false
+  attachments: 'media/docs' #path to the folder where the attachments are stored
   no-auto-h1: false #disable the automatic generation of h1 if no h1 is found
   blog_list:
     pagination: true #enable pagination
