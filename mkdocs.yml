@@ -3,9 +3,8 @@ site_description: Everything that is not a fragment is invisible
 site_url: https://mattfisher.io/ # Change this to your site URL
 
 nav:
-  - Front: 'index.md'
-  - Notes: '/logbook/notes/'
-  - Updates: '/logbook/updates/'
+  - Front: '../'
+  - Logbook: '/logbook/'
 
 theme:
     name: 'material'
