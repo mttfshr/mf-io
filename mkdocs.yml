@@ -2,11 +2,6 @@ site_name: Matt Fisher # Change this to your site name
 site_description: Everything that is not a fragment is invisible
 site_url: https://mattfisher.io/ # Change this to your site URL
 
-nav:
-  - Front: '../'
-  - 'logbook'
-  - Logbook: 'logbook'
-
 theme:
     name: 'material'
     logo: assets/meta/favicons.png
