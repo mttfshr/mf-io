@@ -31,15 +31,10 @@ theme:
         icon: material/lightbulb
         name: Switch to light mode
     features:
-        - navigation.indexes
-        - navigation.instant
-        - navigation.footer
-        - navigation.top
-        - navigation.tabs
-        - navigation.expand
-        - search.suggest
-        - search.highlight
-        - toc.integrate
+      - navigation.top
+      - navigation.tabs
+      - search.suggest
+      - search.highlight
         
 # Extensions
 markdown_extensions:
