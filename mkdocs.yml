@@ -79,9 +79,7 @@ plugins:
   - meta-descriptions
   - git-revision-date-localized:
       type: timeago
-      fallback_to_build_date: true
       locale: en
-      enable_creation_date: true
   - ezlinks:
         wikilinks: true
   - awesome-pages
