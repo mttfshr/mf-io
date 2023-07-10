@@ -2,10 +2,13 @@ site_name: Matt Fisher # Change this to your site name
 site_description: Everything that is not a fragment is invisible
 site_url: https://mattfisher.io/ # Change this to your site URL
 
+nav: 
+  - Start: log/updates/Firsties.md
+
 theme:
     name: 'material'
     logo: assets/meta/favicon.ico
-    favicon: assets/meta/favicon.ico
+    favicon: assets/meta/favicon.icoç
     custom_dir: overrides
     font:
         text: Inter
@@ -71,8 +74,7 @@ plugins:
       custom-attributes: 'assets/css/custom_attributes.css'
   - custom-attributes:
       file: 'assets/css/custom_attributes.css'
-  - tags:
-      tags_file: tags.md
+  - tags
   - encryptcontent:
       title_prefix: '🔐'
       summary: 'Private page'
