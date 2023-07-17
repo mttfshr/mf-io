@@ -49,4 +49,4 @@ Scripts
 
     - would be nice to not have to write a title: in meta. Pull first # h1 if no title
 
-![alt text](../../media/grab.png)
+![alt text](../../grab.png)

@@ -1,10 +1,8 @@
 ---
 title: Me first storage
 description: about Me first storage
-date: 11-05-2021
 tags:
   - log
-draft: true
 publish: true
 ---
 
