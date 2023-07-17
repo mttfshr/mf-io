@@ -1,9 +1,9 @@
-site_name: Matt Fisher # Change this to your site name
+site_name: Matt Fisher 
 site_description: Everything that is not a fragment is invisible
-site_url: https://mattfisher.io/ # Change this to your site URL
+site_url: https://mattfisher.io/ 
 
 nav: 
-  - Start: log/updates/Firsties.md
+  - Start: _log/updates/Firsties.md
 
 theme:
     name: 'material'
