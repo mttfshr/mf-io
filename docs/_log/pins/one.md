@@ -5,4 +5,4 @@ date: 11-14-2021
 publish: true
 ---
 
-![An image](../../grab.png)
+![An image](../../media/grab.png)
