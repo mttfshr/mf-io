@@ -1,0 +1,7 @@
+:root {
+  --md-primary-fg-color:        hsl(210,0,0);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 210; 
+}

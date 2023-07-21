@@ -1,35 +1,22 @@
-site_name: Matt Fisher # Change this to your site name
+site_name: Matt Fisher 
 site_description: Everything that is not a fragment is invisible
-site_url: https://mattfisher.io/ # Change this to your site URL
+site_url: https://mattfisher.io/ 
+
+nav: 
+  - Start: _log/updates/Firsties.md
 
 theme:
     name: 'material'
-    logo: assets/meta/favicons.png
-    favicon: assets/meta/favicons.png
+    logo: assets/meta/favicon.ico
+    favicon: assets/meta/favicon.icoç
     custom_dir: overrides
     font:
         text: Inter
         code: Chivo Mono
     language: en
     palette:
-
-    # Light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: teal
-      accent: light blue
-      toggle:
-        icon: material/lightbulb-outline
-        name: Switch to dark mode
-
-    # Dark mode
-    - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/lightbulb
-        name: Switch to light mode
+      primary: custom
     features:
       - navigation.top
       - navigation.tabs
@@ -79,6 +66,7 @@ plugins:
   - meta-descriptions
   - git-revision-date-localized:
       type: timeago
+      fallback_to_build_date: true
       locale: en
   - ezlinks:
         wikilinks: true
@@ -88,8 +76,7 @@ plugins:
       custom-attributes: 'assets/css/custom_attributes.css'
   - custom-attributes:
       file: 'assets/css/custom_attributes.css'
-  - tags:
-      tags_file: tags.md
+  - tags
   - encryptcontent:
       title_prefix: '🔐'
       summary: 'Private page'
@@ -115,6 +102,7 @@ extra_css:
     - assets/css/admonition.css
     - assets/css/custom_attributes.css
     - assets/css/customization.css
+    - assets/css/theme.css
 extra:
   SEO: assets/meta/SEO.png
   comments: false #disable comments globally
