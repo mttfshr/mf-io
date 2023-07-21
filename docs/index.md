@@ -1,4 +1,4 @@
 ---
 publish: true
-title: ''
----\
+is_homepage: true
+---
