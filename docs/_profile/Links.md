@@ -1,5 +1,9 @@
 ---
 publish: true
+template: links.html
+hide: 
+  - navigation
+  - toc
 ---
 [Sketches and clips](https://instagram.com/matt_fisher){ .md-button }
 [CV and portfolio](https://mattfisherstudio.com/){ .md-button }
